@@ -1,4 +1,3 @@
-import fs from 'fs'
 import md5 from 'md5'
 import htmlparser from 'htmlparser2'
 import Html2SbCompiler from 'html2sb-compiler'

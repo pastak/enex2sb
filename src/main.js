@@ -1,6 +1,6 @@
 import md5 from 'nano-md5'
 import htmlparser from 'htmlparser2'
-import Html2SbCompiler from 'html2sb-compiler'
+import Html2SbCompiler from 'html2sb-compiler/dist/libs/compiler.js'
 import {find, findAll} from './libs/utils'
 
 export default async (uploadImage, input) => {

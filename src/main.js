@@ -57,7 +57,7 @@ export default async (uploadImage, input) => {
 
     const tags = findAll('tag', note).map((_) => '#' + _.children[0].data)
 
-    const body = title + '\n' + result + '\n\n' + tags.join(' ') + '\n'
-    return {body, title}
+    const lines = (title + '\n' + result + '\n\n' + tags.join(' ') + '\n').split('\n')
+    return {lines, title}
   }))
 }

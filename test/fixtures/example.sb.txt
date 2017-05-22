@@ -1,13 +1,18 @@
 test
-
-
 This is text.
-[[bold]]
+
+[* bold]
+
 [/ Italic]
-Underline
+
+[_ Underline]
+
 red
+
 hightlighted
-font size large
+
+[***** font size large]
+
 [http://example.com link]
 
 
@@ -29,9 +34,6 @@ done
 table:_
  1x1	1x2
  2x1	2x2
-
-
-
 
 
 #tag1 #tag2

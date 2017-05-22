@@ -1,6 +1,6 @@
 import md5 from 'nano-md5'
 import htmlparser from 'htmlparser2'
-import Html2SbCompiler from 'html2sb-compiler/dist/libs/compiler.js'
+import {parse as html2SbParse, toScrapbox as token2Sb} from 'html2sb-compiler'
 import {find, findAll} from './libs/utils'
 
 export default async (uploadImage, input, options) => {
@@ -36,24 +36,9 @@ export default async (uploadImage, input, options) => {
       }
     }))
 
-    const compiler = new Html2SbCompiler(ENNoteXML)
-    compiler.extend('en-media', (node, defaultCompile) => {
-      const resourceUrl = resources[node.attribs.hash]
-      switch (node.attribs.type) {
-        case 'image/gif':
-        case 'image/jpeg':
-        case 'image/png':
-          return `[${resourceUrl}]`
-          break
-        case 'audio/wav':
-        case 'audio/mpeg':
-        case 'audio/amr':
-        case 'application/pdf':
-          // Nothing to do
-          break
-      }
-    })
-    const {result} = compiler.compile()
+    console.log(JSON.stringify(html2SbParse(ENNoteXML, {evernote: true})))
+
+    const result = token2Sb(html2SbParse(ENNoteXML, {evernote: true}))
 
     const tags = findAll('tag', note).map((_) => '#' + _.children[0].data)
 

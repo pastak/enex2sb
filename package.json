@@ -25,7 +25,7 @@
     "commander": "^2.9.0",
     "gyazo-api": "^0.3.1",
     "gyazo-browser-upload": "^1.0.0",
-    "html2sb-compiler": "^1.0.2",
+    "html2sb-compiler": "github:martinheidegger/html2sb-compiler#f65502b0ae92ffd3e7feccb945b20b163c7cf421",
     "htmlparser2": "^3.9.2",
     "into-stream": "^3.1.0",
     "nano-md5": "^1.0.3"
@@ -38,9 +38,10 @@
     "babel": "inherit"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
+    "ava": "^0.19.1",
     "babel-cli": "^6.18.0",
     "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.18.0",
     "babelify": "^7.3.0",

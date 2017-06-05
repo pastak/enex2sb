@@ -25,7 +25,7 @@
     "commander": "^2.9.0",
     "gyazo-api": "^0.3.1",
     "gyazo-browser-upload": "^1.0.0",
-    "html2sb-compiler": "github:martinheidegger/html2sb-compiler#f65502b0ae92ffd3e7feccb945b20b163c7cf421",
+    "html2sb-compiler": "^1.0.3",
     "into-stream": "^3.1.0",
     "nano-md5": "^1.0.3"
   },

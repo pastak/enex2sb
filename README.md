@@ -1,3 +1,6 @@
+# It has been moved [`scrapbox-converter` mono-repo](https://github.com/pastak/scrapbox-converter/tree/master/packages/enex2sb) and this repo is archived.
+
+
 # enex2sb
 Encode XML exported by Evernote to Scrapbox.io style importable json
 
